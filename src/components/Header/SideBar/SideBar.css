@@ -4,6 +4,7 @@
     width: 27px;
     height: 10px;
     top: 20px;
+    transition: top 0.5s ease-in-out;
 }
 
 /* Color/shape of burger icon bars */
@@ -27,8 +28,7 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    display: none;
 }
 
 /* Color/shape of close button cross */
@@ -39,6 +39,7 @@
 #react-burger-menu-btn{
     top: -7px !important;
     height: 25px !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /*
@@ -47,16 +48,18 @@
   */
 .bm-menu-wrap {
     position: fixed;
-    height: 100%;
+    height: 110% !important;
     left: 0;
     top: 0;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    background: #000;
-    padding: 2.5em 1.5em 0;
-    width: 100%;
+    background: #F6F6F6;
+    padding-top: 49px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 167px;
     font-size: 1.15em;
     position: relative;
 }
@@ -69,7 +72,9 @@
 /* Wrapper for item list */
 .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Individual item */
@@ -79,7 +84,9 @@
 
 /* Styling of overlay */
 .bm-overlay {
-    background: transparent !important;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 /* Individual item */
@@ -92,10 +99,73 @@
     transition: color 0.2s;
 }
 
-.bm-item:hover {
-  color: #ffffff;
-}
-
 .wrapper{
     min-width: 30px;
+}
+
+.sidebar__header{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.sidebar__ava{
+    width: 34px !important;
+    height: 34px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+.sidebar__ava > img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.sidebar__header > h2{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.sidebar__header > h2 > a{
+    color: #333333 !important;
+    text-decoration: none;
+}
+
+.menu-item{
+    width: 149px;
+    font-size: 18px;
+    font-family: 'Calibri light', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: #fff;
+    color: #000;
+    height: 39px;
+    margin-bottom: 5px;
+    border-radius: 13px;
+    display: flex !important;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.menu-item.active{
+    background: #4B6DE3;
+    color: #fff;
+}
+
+.advertising{
+    display: flex;
+    width: 100%;
+    flex: 1 1 0;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.qr_code{
+    margin-bottom: 80px;
 }

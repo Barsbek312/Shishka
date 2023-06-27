@@ -1,0 +1,129 @@
+.entrance__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.entrance__wrapper > h2{
+    font-size: 27px;
+    font-family: "Calibri", sans-serif;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.navigator{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigator > .check {
+    font-size: 24px;
+    font-family: "Calibri", sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.navigator .active{
+    color: #4B6DE3;
+}
+
+.form{
+    width: 100%;
+}
+
+.modal__window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 116.1%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    max-width: 400px;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.modal__window > div > *{
+    width: 100%;
+}
+
+.modal__window h3{
+    font-size: 32px;
+    font-family: "Calibri", sans-serif;
+    font-weight: 400;
+    line-height: 39.06px;
+    color: #333333E5;
+}
+
+.modal__window p{
+    font-family: "Calibri light", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19.53px;
+    margin-top: 50px;
+}
+
+
+.modal__window input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333333CC;
+    padding: 5px;
+    font-size: 14px;
+    font-family: "Calibri light", sans-serif;
+    font-weight: 300;
+    margin-top: 45px;
+}
+
+.modal__window input::placeholder{
+    color: #33333399;
+}
+
+.modal__window button {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Calibri light", sans-serif;
+    font-weight: 300;
+}
+
+.modal__button{
+    margin-top: 45px;
+    width: 100%;
+    background-color: #4B6DE3;
+    color: #FFFFFFE5;
+    border-radius: 30px;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+}
+
+.modal__exit{
+    background-color: #D4D4D4;
+    padding: 15px 0;
+    border-radius: 53px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.modal__window_close{
+    display: none !important;
+    background-color: transparent;
+}
+
+
+
+
+

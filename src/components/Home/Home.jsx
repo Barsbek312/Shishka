@@ -1,7 +1,7 @@
 import React from "react";
 import h from "./Home.module.css";
 import HomeSlider from "./HomeSlider/HomeSlider";
-import Post from "./Post/Post";
+import RegularPost from "../common/Post/RegularPost/RegularPost";
 
 const Home = () => {
 
@@ -9,12 +9,12 @@ const Home = () => {
 
     const listOfPosts = arr.map(item => {
         return (
-            <Post />
+            <RegularPost isHome={true}/>
         )
     })
 
     return (
-        <main>
+        <main className="main">
             <div className="container">
                 <h1 className={h.title}>Главная</h1>
                 <HomeSlider />
